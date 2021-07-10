@@ -1,0 +1,82 @@
+:root{
+    --primario: #7da3a1;
+    --primarioOscuro: #43675c;
+    --secundario: #ffce00;
+    --secundarioOscuro: rgb(233, 187, 2);
+    --blanco: #fff;
+    --negro: #000;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* globales */
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+h1,h2,h3{
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/* navegacion */
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+/* navegacion */
+.nav{
+    background-color: var(--primarioOscuro);
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.nav .nav__enlace{
+    color: var(--blanco);
+    padding: 1rem 0;
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+}
+/* main */
+.tarjeta{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+.tarjeta .tarjeta__producto{
+    background-color: var(--primarioOscuro);
+}
