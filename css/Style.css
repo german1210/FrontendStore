@@ -143,3 +143,36 @@ h3{
         font-size: 2.4rem;
     }
 }
+/* Pag Nosotros */
+/* main */
+.nosotros__img--foto{
+    width: 100%;
+}
+@media(min-width: 768px){
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        gap: 2rem;
+    }
+    .nosotros__info{
+        grid-column: 1/2;
+    }
+    .nosotros__img{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+.comprar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.comprar__tarjeta{
+    text-align: center;
+}
+
+@media(min-width: 768px){
+    .comprar{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}
